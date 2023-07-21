@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Estilo para a barra lateral */
+        .sidebar {
+          position: fixed;
+          top: 0;
+          left: -200px; /* Posição inicial fora da tela */
+          width: 200px;
+          height: 100vh;
+          background-color: #f1f1f1;
+          transition: left 0.3s ease; /* Efeito de transição suave */
+        }
+    
+        /* Estilo para o conteúdo da barra lateral */
+        .sidebar-content {
+          padding: 20px;
+        }
+    
+        /* Estilo para o botão de abrir/fechar */
+        .toggle-button {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          padding: 10px;
+          background-color: #f1f1f1;
+          cursor: pointer;
+        }
+      </style>
+      <script>
+        function toggleSidebar() {
+          var sidebar = document.getElementById('sidebar');
+          sidebar.style.left = sidebar.style.left === '-200px' ? '0' : '-200px';
+        }
+      </script>
+    </head>
+    <body>
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+          <!-- Conteúdo da barra lateral -->
+          <h2>Menu</h2>
+          <ul>
+            <li>Opção 1</li>
+            <li>Opção 2</li>
+            <li>Opção 3</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="toggle-button" onclick="toggleSidebar()">☰</div>
+    
+      <div class="content">
+        <!-- Conteúdo principal da página -->
+        <h1>Conteúdo Principal</h1>
+        <p>Este é o conteúdo principal da página.</p>
+      </div>
+</body>
+</html>
