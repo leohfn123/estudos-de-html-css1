@@ -8,30 +8,33 @@
 <body>
     <style>
     .menu {
-        width: 200px; /* Largura do menu */
-        height: 100vh; /* Altura do menu */
-        background-color: #f1f1f1; /* Cor de fundo do menu */
-        float: left; /* Alinhar à esquerda */
+        width: 200px; 
+        height: auto; 
+        background-color: #cf0000; 
+        float: left; 
       }
       
-      /* Estilo para os itens do menu */
+      
       .menu a {
-        display: block; /* Exibir como bloco */
-        padding: 16px; /* Espaçamento interno */
-        text-decoration: none; /* Remover decoração de texto */
-        color: #000; /* Cor do texto */
+        display: block; 
+        padding: 16px; 
+        text-decoration: none; 
+        color: #000; 
       }
       
-      /* Estilo para os itens do menu quando hover */
+      
       .menu a:hover {
-        background-color: #ccc; /* Cor de fundo ao passar o mouse */
+        background-color: rgb(100, 92, 92); 
+        
       }
       
-      /* Estilo para o conteúdo principal */
+      
       .content {
-        margin-left: 200px; /* Margem à esquerda para deixar espaço para o menu */
-        padding: 16px; /* Espaçamento interno */
+        margin-left: 200px; 
+        padding: 16px; 
       }
+
+      
     </style>
      <script>
         function toggleSubmenu(event) {
@@ -43,23 +46,33 @@
   <body>
    
     <div class="menu">
-        <a href="#" onclick="toggleSubmenu(this)">Item 1</a>
+        <a href="#" onclick="toggleSubmenu(this)">Livros</a>
         <div class="submenu">
-          <a href="#">Opção 1</a>
-          <a href="#">Opção 2</a>
-          <a href="#">Opção 3</a>
+          <a href="#">Suspence</a>
+          <a href="#">Romance</a>
+          <a href="#">Ficção</a>
+          <a href="#">NÃO-FICÇÃO</a>
+          <a href="#">Aventura</a>
+          <a href="#">História em Quadrinhos (HQ)</a>
+          <a href="#">Terror</a>
+          <a href="#">Material Acadêmico </a>
         </div>
-        <a href="#" onclick="toggleSubmenu(this)">Item 2</a>
+        <a href="#" onclick="toggleSubmenu(this)">Data de lançamento</a>
         <div class="submenu">
-          <a href="#">Opção 4</a>
-          <a href="#">Opção 5</a>
-          <a href="#">Opção 6</a>
+          <a href="#">1985</a>
+          <a href="#">1986</a>
+          <a href="#">1987</a>
+          <a href="#">1988</a>
+          <a href="#">1989</a>
+          <a href="#">1900</a>
+          <a href="#">1901</a>
         </div>
-        <a href="#" onclick="toggleSubmenu(this)">Item 3</a>
+        <a href="#" onclick="toggleSubmenu(this)">Edição do livro</a>
         <div class="submenu">
-          <a href="#">Opção 7</a>
-          <a href="#">Opção 8</a>
-          <a href="#">Opção 9</a>
+          <a href="#">Edição 1 </a>
+          <a href="#">Edição 2 </a>
+          <a href="#">Edição 3 </a>
+          <a href="#">Edição 4 </a>
         </div>
       </div>
     
